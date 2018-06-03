@@ -9,6 +9,7 @@ import manor.items.food.fruits.ItemPotato;
 import manor.items.food.fruits.ItemPineapple;
 import manor.items.food.fruits.ItemGrape;
 import manor.items.food.fruits.ItemStrawberry;
+import manor.items.food.fruits.ItemLemon;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
@@ -23,6 +24,8 @@ public class ItemRegister {
     public static ItemFood pineapple;
     public static ItemFood grape;
     public static ItemFood strawberry;
+    public static ItemFood lemon;
+
     public static void init(){
         //unlocalizedName为在游戏中的id名称，registryName是在forge中注册的名称
         manorTest = new ItemManorTest("manor_test", "manor_test");
@@ -32,6 +35,8 @@ public class ItemRegister {
         pineapple = new ItemPineapple("pineapple", "pineapple", 5, 0.4F, false);
         grape = new ItemGrape("grape", "grape", 1, 0.1F, false);
         strawberry = new ItemStrawberry("strawberry", "strawberry", 1, 0.1F, false);
+        lemon = new ItemGrape("lemon", "lemon", 2, 0.1F, false);
+
     }
 
     public static void register(){
@@ -41,6 +46,7 @@ public class ItemRegister {
         registerItem(pineapple);
         registerItem(grape);
         registerItem(strawberry);
+        registerItem(lemon);
     }
 
     public static void registerRenders(){
@@ -50,6 +56,7 @@ public class ItemRegister {
         registerRender(pineapple);
         registerRender(grape);
         registerRender(strawberry);
+        registerRender(lemon);
     }
 
     public static void registerItem(Item item){
