@@ -5,25 +5,32 @@ package manor.init;
 
 import manor.ManorLife;
 import manor.items.ItemManorTest;
+import manor.items.food.fruits.ItemPotato;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ItemRegister {
     public static Item manorTest;
+    public static ItemFood potato;
     public static void init(){
+        //unlocalizedName为在游戏中的id名称，registryName是在forge中注册的名称
         manorTest = new ItemManorTest("manor_test", "manor_test");
-
+        //对于食物来说还应当传入三个值，amount代表能恢复的饱食度，saturation表示能该事物所能添加的相对饱和度，isWolfFood表示狼会不会吃它
+        potato = new ItemPotato("potato", "potato", 4, 0.3F, false);
     }
 
     public static void register(){
         registerItem(manorTest);
+        registerItem(potato);
     }
 
     public static void registerRenders(){
         registerRender(manorTest);
+        registerRender(potato);
     }
 
     public static void registerItem(Item item){
