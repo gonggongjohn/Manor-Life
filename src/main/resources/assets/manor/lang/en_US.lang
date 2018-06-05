@@ -1,3 +1,7 @@
 item.manor_test.name=Manor Test
 item.potato.name=Potato
+item.banana.name=Banana
+item.lemon.name=Lemon
+item.pineapple.name=Pineapple
+item.strawberry.name=Strawberry
 itemGroup.manorlife=Manor Life

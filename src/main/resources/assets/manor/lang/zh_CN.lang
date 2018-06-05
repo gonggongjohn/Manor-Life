@@ -1,3 +1,7 @@
 item.manor_test.name=庄园人生测试物品
 item.potato.name=番茄
+item.banana.name=香蕉
+item.lemon.name=柠檬
+item.pineapple.name=菠萝
+item.strawberry.name=草莓
 itemGroup.manorlife=庄园人生

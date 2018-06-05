@@ -5,11 +5,7 @@ package manor.init;
 
 import manor.ManorLife;
 import manor.items.ItemManorTest;
-import manor.items.food.fruits.ItemPotato;
-import manor.items.food.fruits.ItemPineapple;
-import manor.items.food.fruits.ItemGrape;
-import manor.items.food.fruits.ItemStrawberry;
-import manor.items.food.fruits.ItemLemon;
+import manor.items.food.fruits.*;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
@@ -31,11 +27,11 @@ public class ItemRegister {
         manorTest = new ItemManorTest("manor_test", "manor_test");
         //对于食物来说还应当传入三个值，amount代表能恢复的饱食度，saturation表示能该事物所能添加的相对饱和度，isWolfFood表示狼会不会吃它
         potato = new ItemPotato("potato", "potato", 4, 0.3F, false);
-        banana = new ItemPotato("banana", "banana", 2, 0.2F, false);
+        banana = new ItemBanana("banana", "banana", 2, 0.2F, false);
         pineapple = new ItemPineapple("pineapple", "pineapple", 5, 0.4F, false);
         grape = new ItemGrape("grape", "grape", 1, 0.1F, false);
         strawberry = new ItemStrawberry("strawberry", "strawberry", 1, 0.1F, false);
-        lemon = new ItemGrape("lemon", "lemon", 2, 0.1F, false);
+        lemon = new ItemLemon("lemon", "lemon", 2, 0.1F, false);
 
     }
 
