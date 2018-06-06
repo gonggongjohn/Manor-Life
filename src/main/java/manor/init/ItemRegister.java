@@ -26,6 +26,7 @@ public class ItemRegister {
     public static ItemFood mango;
     public static ItemFood coffeebean;
     public static ItemFood cucumber;
+    public static ItemFood onion;
 
     public static void init(){
         //unlocalizedName为在游戏中的id名称，registryName是在forge中注册的名称
@@ -41,6 +42,7 @@ public class ItemRegister {
         mango = new ItemMango("mango", "mango", 4, 0.2F, false);
         coffeebean = new ItemCoffeebean("coffeebean", "coffeebean", 0, 0.1F, false);
         cucumber = new ItemCucumber("cucumber", "cucumber", 4, 0.4F, false);
+        onion = new ItemOnion("onion", "onion", 1, 0.4F, false);
     }
 
     public static void register(){
@@ -55,6 +57,7 @@ public class ItemRegister {
         registerItem(mango);
         registerItem(coffeebean);
         registerItem(cucumber);
+        registerItem(onion);
     }
 
     public static void registerRenders(){
@@ -69,6 +72,7 @@ public class ItemRegister {
         registerRender(mango);
         registerRender(coffeebean);
         registerRender(cucumber);
+        registerRender(onion);
     }
 
     public static void registerItem(Item item){
