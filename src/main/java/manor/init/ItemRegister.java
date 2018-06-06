@@ -22,6 +22,7 @@ public class ItemRegister {
     public static ItemFood strawberry;
     public static ItemFood lemon;
     public static ItemFood pear;
+    public static ItemFood mango;
 
     public static void init(){
         //unlocalizedName为在游戏中的id名称，registryName是在forge中注册的名称
@@ -33,8 +34,8 @@ public class ItemRegister {
         grape = new ItemGrape("grape", "grape", 1, 0.1F, false);
         strawberry = new ItemStrawberry("strawberry", "strawberry", 1, 0.1F, false);
         lemon = new ItemLemon("lemon", "lemon", 2, 0.1F, false);
-        pear = new ItemLemon("pear", "pear", 4, 0.2F, false);
-
+        pear = new ItemPear("pear", "pear", 4, 0.2F, false);
+        mango = new ItemMango("mango", "mango", 4, 0.2F, false);
     }
 
     public static void register(){
@@ -46,6 +47,7 @@ public class ItemRegister {
         registerItem(strawberry);
         registerItem(lemon);
         registerItem(pear);
+        registerItem(mango);
     }
 
     public static void registerRenders(){
@@ -57,6 +59,7 @@ public class ItemRegister {
         registerRender(strawberry);
         registerRender(lemon);
         registerRender(pear);
+        registerRender(mango);
     }
 
     public static void registerItem(Item item){
