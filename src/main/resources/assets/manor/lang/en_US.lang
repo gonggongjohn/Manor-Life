@@ -4,4 +4,6 @@ item.banana.name=Banana
 item.lemon.name=Lemon
 item.pineapple.name=Pineapple
 item.strawberry.name=Strawberry
+item.grape.name=Grape
+item.pear.name=Pear
 itemGroup.manorlife=Manor Life
