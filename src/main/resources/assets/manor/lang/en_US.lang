@@ -12,4 +12,6 @@ item.cucumber.name=cucumber
 item.onion.name=onion
 item.corn.name=corn
 item.cabbage.name=cabbage
+
+tile.manor_testblock.name=Manor TestBlock
 itemGroup.manorlife=Manor Life

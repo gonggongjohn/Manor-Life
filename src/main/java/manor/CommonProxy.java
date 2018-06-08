@@ -4,6 +4,7 @@ package manor;
    在服务器和客户端中均要加载的内容要在此完成注册，比如物品的注册
  */
 
+import manor.init.BlockRegister;
 import manor.init.ItemRegister;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -13,6 +14,8 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event){
         ItemRegister.init();
         ItemRegister.register();
+        BlockRegister.init();
+        BlockRegister.register();
     }
 
     public void init(FMLInitializationEvent event){

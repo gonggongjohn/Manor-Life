@@ -4,6 +4,7 @@ package manor;
    仅在客户端加载的内容要在此完成注册，比如模型和材质的注册
  */
 
+import manor.init.BlockRegister;
 import manor.init.ItemRegister;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -25,5 +26,6 @@ public class CilentProxy extends CommonProxy{
     @Override
     public void registerRenders(){
         ItemRegister.registerRenders();
+        BlockRegister.registerRenders();
     }
 }

@@ -12,4 +12,6 @@ item.cucumber.name=黄瓜
 item.onion.name=洋葱
 item.corn.name=玉米
 item.cabbage.name=卷心菜
+
+tile.manor_testblock.name=庄园人生测试物品
 itemGroup.manorlife=庄园人生
