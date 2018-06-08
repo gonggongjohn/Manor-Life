@@ -34,19 +34,19 @@ public class ItemRegister {
         //unlocalizedName为在游戏中的id名称，registryName是在forge中注册的名称
         manorTest = new ItemManorTest("manor_test", "manor_test");
         //对于食物来说还应当传入三个值，amount代表能恢复的饱食度，saturation表示能该事物所能添加的相对饱和度，isWolfFood表示狼会不会吃它
-        potato = new ItemPotato("potato", "potato", 4, 0.3F, false);
-        banana = new ItemBanana("banana", "banana", 2, 0.2F, false);
-        pineapple = new ItemPineapple("pineapple", "pineapple", 5, 0.4F, false);
-        grape = new ItemGrape("grape", "grape", 1, 0.1F, false);
-        strawberry = new ItemStrawberry("strawberry", "strawberry", 1, 0.1F, false);
-        lemon = new ItemLemon("lemon", "lemon", 2, 0.1F, false);
-        pear = new ItemPear("pear", "pear", 4, 0.2F, false);
-        mango = new ItemMango("mango", "mango", 4, 0.2F, false);
-        coffeebean = new ItemCoffeebean("coffeebean", "coffeebean", 0, 0.1F, false);
-        cucumber = new ItemCucumber("cucumber", "cucumber", 4, 0.4F, false);
-        onion = new ItemOnion("onion", "onion", 1, 0.4F, false);
-        corn = new ItemCorn("corn", "corn", 6, 0.4F, false);
-        cabbage = new ItemCabbage("cabbage", "cabbage", 6, 0.2F, false);
+        potato = new IFruitBase("potato", "potato", 4, 0.3F, false);
+        banana = new IFruitBase("banana", "banana", 2, 0.2F, false);
+        pineapple = new IFruitBase("pineapple", "pineapple", 5, 0.4F, false);
+        grape = new IFruitBase("grape", "grape", 1, 0.1F, false);
+        strawberry = new IFruitBase("strawberry", "strawberry", 1, 0.1F, false);
+        lemon = new IFruitBase("lemon", "lemon", 2, 0.1F, false);
+        pear = new IFruitBase("pear", "pear", 4, 0.2F, false);
+        mango = new IFruitBase("mango", "mango", 4, 0.2F, false);
+        coffeebean = new IVegetableBase("coffeebean", "coffeebean", 0, 0.1F, false);
+        cucumber = new IVegetableBase("cucumber", "cucumber", 4, 0.4F, false);
+        onion = new IVegetableBase("onion", "onion", 1, 0.4F, false);
+        corn = new IVegetableBase("corn", "corn", 6, 0.4F, false);
+        cabbage = new IVegetableBase("cabbage", "cabbage", 6, 0.2F, false);
     }
 
     public static void register(){
