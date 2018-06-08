@@ -6,6 +6,7 @@ package manor;
 
 import manor.init.BlockRegister;
 import manor.init.ItemRegister;
+import manor.init.TileEntityRegister;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -16,6 +17,7 @@ public class CommonProxy {
         ItemRegister.register();
         BlockRegister.init();
         BlockRegister.register();
+        TileEntityRegister.registerTileEntities();
     }
 
     public void init(FMLInitializationEvent event){

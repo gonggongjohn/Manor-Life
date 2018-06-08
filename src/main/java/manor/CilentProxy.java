@@ -6,12 +6,15 @@ package manor;
 
 import manor.init.BlockRegister;
 import manor.init.ItemRegister;
+import manor.init.client.GUIHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 public class CilentProxy extends CommonProxy{
     public void preInit(FMLPreInitializationEvent event){
+        NetworkRegistry.INSTANCE.registerGuiHandler(ManorLife.instance, new GUIHandler());
         super.preInit(event);
     }
 
