@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "front": "manor:blocks/machine/juice_extractor_front",
+	"side": "manor:blocks/machine/juice_extractor_side"
+  },
+  "elements": [
+      {
+	  
+	  }
+  ]
+}
