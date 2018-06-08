@@ -1,12 +1,8 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/orientable",
   "textures": {
+    "top": "manor:blocks/machine/juice_extractor_side",
     "front": "manor:blocks/machine/juice_extractor_front",
 	"side": "manor:blocks/machine/juice_extractor_side"
-  },
-  "elements": [
-      {
-	  
-	  }
-  ]
+  }
 }
