@@ -14,4 +14,5 @@ item.corn.name=corn
 item.cabbage.name=cabbage
 
 tile.manor_testblock.name=Manor TestBlock
+tile.pear_log.name=pear tree's log
 itemGroup.manorlife=Manor Life

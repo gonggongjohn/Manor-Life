@@ -4,6 +4,7 @@ package manor.init;
 
 import manor.ManorLife;
 import manor.blocks.BlockManorTest;
+import manor.blocks.BlockPearLog;
 import manor.blocks.machine.BlockJuiceExtractor;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -16,20 +17,25 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class BlockRegister {
     public static Block manorTest;
+    public static Block pearLog;
     public static Block juiceExtractor;
     public static void init(){
         //最后一项Material指方块的属性（具体见Material点后面的提示）
         manorTest =new BlockManorTest("manor_testblock", "manor_testblock", Material.ROCK);
+        pearLog =new BlockPearLog("pear_log", "pear_log", Material.WOOD);
         juiceExtractor = new BlockJuiceExtractor("juice_extractor", "juice_extractor", Material.IRON);
+
     }
 
     public static void register(){
         registerBlock(manorTest);
+        registerBlock(pearLog);
         registerBlock(juiceExtractor);
     }
 
     public static void registerRenders(){
         registerRender(manorTest);
+        registerRender(pearLog);
         registerRender(juiceExtractor);
     }
 
