@@ -55,6 +55,6 @@ public class BlockJuiceExtractor extends Block implements ITileEntityProvider {
         if(!worldIn.isRemote){
             playerIn.openGui(ManorLife.instance, GUIHandler.JUICE_EXTRACTOR, worldIn, pos.getX(), pos.getY(), pos.getZ());
         }
-        return super.onBlockActivated(worldIn, pos, state, playerIn, hand, heldItem, side, hitX, hitY, hitZ);
+        return true;
     }
 }
