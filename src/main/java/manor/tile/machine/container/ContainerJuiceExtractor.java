@@ -28,7 +28,7 @@ public class ContainerJuiceExtractor extends Container {
         }
 
         for(int x = 0; x < 9; ++x){
-            this.addSlotToContainer(new Slot(playerInv, x, xPos + x * 18, 99));
+            this.addSlotToContainer(new Slot(playerInv, x, xPos + x * 18, 142));
         }
     }
 

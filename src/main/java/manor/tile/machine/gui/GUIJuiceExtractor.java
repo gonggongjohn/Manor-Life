@@ -5,7 +5,6 @@ import manor.tile.machine.TileJuiceExtractor;
 import manor.tile.machine.container.ContainerJuiceExtractor;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.util.ResourceLocation;
 

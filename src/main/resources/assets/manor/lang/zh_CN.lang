@@ -15,4 +15,6 @@ item.cabbage.name=卷心菜
 
 tile.manor_testblock.name=庄园人生测试物品
 tile.pear_log.name=梨树原木
+
+tile.juice_extractor.name=榨汁机
 itemGroup.manorlife=庄园人生

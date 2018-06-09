@@ -38,7 +38,7 @@ public class BlockJuiceExtractor extends Block implements ITileEntityProvider {
         return new TileJuiceExtractor();
     }
 
-   /* @Override
+   @Override
     public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
         TileJuiceExtractor te = (TileJuiceExtractor) worldIn.getTileEntity(pos);
         IItemHandler handler = te.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
@@ -48,7 +48,6 @@ public class BlockJuiceExtractor extends Block implements ITileEntityProvider {
         }
         super.breakBlock(worldIn, pos, state);
     }
-    */
 
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
